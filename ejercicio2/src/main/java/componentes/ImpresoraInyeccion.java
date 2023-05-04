@@ -1,12 +1,10 @@
 package componentes;
 
-import java.util.List;
-
-public class ImpresoraInyeccion extends DispositivoSalida{
+public class ImpresoraInyeccion extends Impresora{
     private String tipoCartucho;
 
-    public ImpresoraInyeccion(String fabricante, String modelo, double precioVenta, List<Integer> puertosValidos, String tipoCartucho) {
-        super(fabricante, modelo, precioVenta, puertosValidos);
+    public ImpresoraInyeccion(String fabricante, String modelo, double precioVenta,int[] puertosValidos, String tipoCartucho) {
+        super(fabricante, modelo, precioVenta, tipoCartucho, puertosValidos);
         this.tipoCartucho = tipoCartucho;
 
     }

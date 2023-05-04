@@ -1,19 +1,14 @@
 package componentes;
 
-import java.util.List;
+public class ImpresoraLaser extends Impresora {
+    int numPaginasImpresas;
 
-public class ImpresoraLaser extends DispositivoSalida{
-
-    private int[] numPaginasImpresas;
-    private String tipoCartucho;
-
-    public ImpresoraLaser(String fabricante, String modelo, double precioVenta, List<Integer> puertosValidos, String tipoCartucho, int[] numPaginasImpresas) {
-        super(fabricante, modelo, precioVenta, puertosValidos);
-        this.tipoCartucho = tipoCartucho;
+    public ImpresoraLaser(String fabricante, String modelo, Double precioVenta, String tipoCartucho, int numPaginasImpresas, int[] puertosValidos) {
+        super(fabricante, modelo, precioVenta, tipoCartucho, puertosValidos);
         this.numPaginasImpresas = numPaginasImpresas;
-
     }
 
-
-
+    public String toString() {
+        return super.toString() + " ImpresoraLaser [numPaginasImpresas=" + this.numPaginasImpresas + "]";
+    }
 }
