@@ -3,8 +3,8 @@ package componentes;
 public class ImpresoraInyeccion extends Impresora{
     private String tipoCartucho;
 
-    public ImpresoraInyeccion(String fabricante, String modelo, double precioVenta,int[] puertosValidos, String tipoCartucho) {
-        super(fabricante, modelo, precioVenta, tipoCartucho, puertosValidos);
+    public ImpresoraInyeccion(String fabricante, String modelo, double precioVenta, String tipoCartucho, int[] puertosValidos) {
+        super(fabricante, modelo, precioVenta, tipoCartucho);
         this.tipoCartucho = tipoCartucho;
 
     }
