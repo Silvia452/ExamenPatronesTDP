@@ -1,3 +1,7 @@
+package componentes;
+
+import componentes.DispositivoEntrada;
+
 import java.util.List;
 
 public class Raton extends DispositivoEntrada {

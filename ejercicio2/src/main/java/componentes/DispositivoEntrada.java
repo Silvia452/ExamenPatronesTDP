@@ -1,3 +1,7 @@
+package componentes;
+
+import componentes.Componente;
+
 import java.util.List;
 
 public abstract class DispositivoEntrada extends Componente {

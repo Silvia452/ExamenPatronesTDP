@@ -1,4 +1,6 @@
-// Clase abstracta Componente
+package componentes;
+
+// Clase abstracta componentes.Componente
 public abstract class Componente {
     private String fabricante;
     private String modelo;

@@ -16,6 +16,10 @@ public class Builder {
         this.tiempoMedioAsistencia = tiempoMedioAsistencia;
         return this;
     }
+    public Builder conNumAmbulancias(ArrayList<Integer> numAmbulancias) {
+        this.numAmbulancias = numAmbulancias;
+        return this;
+    }
 
     public Base build() {
         return new Base(nombre, tiempoMedioAsistencia, numAmbulancias);
